@@ -14,7 +14,7 @@ A deep learning-based system for automated brain tumor segmentation in MRI scans
 - [Project Structure](#project-structure)
 - [Future Work](#future-work)
 - [Contributors](#contributors)
-- [License](#license)
+
 
 ---
 
@@ -28,12 +28,10 @@ This project implements an end-to-end pipeline for:
 ---
 
 ## 📂 Dataset
-We use the [BraTS 2020](https://www.med.upenn.edu/cbica/brats2020/data.html) dataset, which includes multimodal MRI scans (T1, T1c, T2, FLAIR) and ground-truth annotations for:
+We use the [BraTS 2020](https://drive.google.com/drive/folders/1O64tMYUBfJQNor4w2QgEjOS2Ph-vwLGy?usp=sharing) dataset, which includes multimodal MRI scans (T1, T1c, T2, FLAIR) and ground-truth annotations for:
 - Enhancing Tumor
 - Tumor Core
 - Whole Tumor
-
-> 📎 Note: You must request access to BraTS data via the official challenge site.
 
 ---
 
@@ -91,8 +89,6 @@ python predict.py --model saved_model.h5 --input /path/to/test_data
 |---------------------|-------------|
 | Dice Coefficient    | 0.85        |
 | Intersection over Union (IoU) | 0.81 |
-| Sensitivity         | 0.87        |
-| Specificity         | 0.92        |
 
 Visualizations are available in the `/results/` directory.
 
@@ -124,13 +120,10 @@ Visualizations are available in the `/results/` directory.
 ---
 
 ## 👨‍💻 Contributors
-- Nikhil Thakur  
-- Mohit Chaudhary  
 - Siddhant Pawbake  
+- Mohit Chaudhary  
+- Nikhil Thakur  
 - Lovish Wadhwa  
 - Supervisor: Dr. Rosevir Singh
 
 ---
-
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
